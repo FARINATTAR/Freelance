@@ -48,7 +48,7 @@ function App() {
           <Route path="projects" element={<ProjectsList />} />
           <Route path="/projects/add" element={<AddProject />} />
 
-          <Route path="projects/:id" element={<ProjectDetails />} />
+          <Route path="projects/:projectId" element={<ProjectDetails />} />
           <Route path="projects/:id/portfolio" element={<AddProject />} />
         </Route>
         
