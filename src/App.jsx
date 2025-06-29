@@ -21,7 +21,7 @@ import ServiceDetails from "./pages/Services/ServiceDetails";
 // Project Pages
 import ProjectsList from "./pages/Projects/ProjectsList";
 import ProjectDetails from "./pages/Projects/ProjectDetails";
-import PortfolioUpload from "./pages/Projects/PortfolioUpload";
+import AddProject from "./pages/Projects/AddProject";
 
 function App() {
   return (
@@ -46,8 +46,10 @@ function App() {
 
           {/* Projects */}
           <Route path="projects" element={<ProjectsList />} />
+          <Route path="/projects/add" element={<AddProject />} />
+
           <Route path="projects/:id" element={<ProjectDetails />} />
-          <Route path="projects/:id/portfolio" element={<PortfolioUpload />} />
+          <Route path="projects/:id/portfolio" element={<AddProject />} />
         </Route>
         
       </Routes>
